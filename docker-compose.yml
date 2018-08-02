@@ -1,0 +1,22 @@
+version: '2'
+services:
+  database:
+    image: "mysql/mysql-server:5.7"
+    environment:
+      MYSQL_DATABASE: cpt-sonar
+      MYSQL_USER: cpt-sonar
+      MYSQL_PASSWORD: cpt-sonar
+      MYSQL_ROOT_PASSWORD: 12345678
+    networks:
+      - cpt-sonar
+  sonar:
+    image: "docker.jmens.de/cpt-sonar:1.0.0"
+    environment:
+      CPTSONAR_JDBCURL: jdbc:mysql://database:3306/cpt-sonar?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&verifyServerCertificate=false&allowMultiQueries=true
+      CPTSONAR_DBUSER: cpt-sonar
+      CPTSONAR_DBPASS: cpt-sonar
+    networks:
+      - cpt-sonar
+
+networks:
+  cpt-sonar:

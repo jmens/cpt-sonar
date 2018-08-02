@@ -1,0 +1,23 @@
+{
+  "name": "cpt-sonar",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "node-fetch": "^2.1.2",
+    "normalize-css": "^2.3.1",
+    "normalize.css": "^8.0.0",
+    "normalizr": "^3.2.4",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-promise": "^2.0.3",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "REACT_APP_API_BASE_URL=http://localhost:10000 react-scripts start",
+    "build": "react-scripts build",
+    "install": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

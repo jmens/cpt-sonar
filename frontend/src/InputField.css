@@ -1,0 +1,12 @@
+input.auth {
+  flex-grow: 1;
+  border: 2px solid var(--main-text-color);
+  text-align: center;
+  font-size: 200%;
+  font-weight: 900;
+  padding: 10px 0;
+  background-color: var(--secondary-bg-color);
+  color: var(--main-text-color);
+}
+
+

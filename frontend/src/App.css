@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  padding: 50px 0 50px 0;
+}
+
+.row-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .row-content {
+    padding: 0 20px;
+  }
+
+  .row {
+    padding: 20px 0 40px 0;
+  }
+}

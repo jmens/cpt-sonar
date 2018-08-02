@@ -1,0 +1,39 @@
+:root {
+  --main-bg-color: #000;
+  --secondary-bg-color: #1f353c;
+  --main-text-color: #6DB4D6;
+  --secondary-text-color: #F8F8FC;
+  --danger: #ff0066;
+  --ok: #30916e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+
+h1 {
+  font-size: 300%;
+  width: 100%;
+  padding: 30px 0 0 0;
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 250%;
+  }
+}
+
+h2 {
+  font-size: 250%;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+
